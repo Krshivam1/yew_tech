@@ -1,0 +1,17 @@
+.table {
+  width: 100%;
+}
+
+.btneye {
+  background: transparent;
+  border: none;
+  display: inline;
+}
+
+.btnpen {
+  background: transparent;
+
+  border: none;
+  display: inline;
+  position: absolute;
+}

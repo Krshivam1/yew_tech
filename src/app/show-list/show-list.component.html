@@ -1,0 +1,47 @@
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand">Bill To Party Master</a>
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+      <i class="bi bi-person-plus-fill" routerLink="/add_data"></i>
+    </form>
+  </div>
+</nav>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Action</th>
+      <th scope="col">client</th>
+      <th scope="col">Code</th>
+      <th scope="col">Name</th>
+      <th scope="col">Address</th>
+      <th scope="col">Country</th>
+      <th scope="col">State</th>
+      <th scope="col">City</th>
+      <th scope="col">Mobile Number</th>
+      <th scope="col">Email</th>
+      <th scope="col">GST No</th>
+      <th scope="col">Pan No</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr scop="row" *ngFor="let data of this.datas ">
+      <th scope="row"><button class="btneye"><i class="bi bi-eye"></i></button> <button class="btnpen"><i
+            class="bi bi-pencil"></i></button></th>
+      <td>{{data.client}}</td>
+      <td>{{data.Code}}</td>
+      <td>{{data.Name}}</td>
+      <td>{{data.Address}}</td>
+      <td>{{data.Country}}</td>
+      <td>{{data['State,150,1']}}</td>
+      <td>{{data['City,150,1']}}</td>
+      <td>{{data['Mobile No']}}</td>
+      <td>{{data.Email}}</td>
+      <td>{{data['GST No']}}</td>
+      <td>{{data['PAN No']}}</td>
+    </tr>
+
+  </tbody>
+</table>
